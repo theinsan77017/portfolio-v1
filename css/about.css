@@ -1,0 +1,96 @@
+.row {
+  padding-top: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-img img {
+  /* width: 30rem; */
+  height: 35rem;
+  width: 100%;
+  border: 4px solid var(--primary-clr-1);
+  object-fit: cover;
+}
+.about-img {
+  flex: 1 1 30rem;
+}
+.about-img-animate {
+  animation: slideToLeft 2s linear forwards;
+}
+.about-info {
+  flex: 1 1 30rem;
+  padding-left: 2rem;
+}
+.about-info-animate {
+  animation: slideToRight 2s linear forwards;
+}
+.about-info h1 {
+  font-family: var(--ff-2);
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin-bottom: 1.6rem;
+  font-weight: 300;
+}
+.about-info p {
+  font-family: var(--ff-1);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.about-info .btn {
+  display: inline-block;
+}
+.about-info .btn span {
+  position: relative;
+  text-transform: capitalize;
+  padding: 4px 8px;
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 1rem;
+  font-family: var(--ff-1);
+  font-size: 1.3rem;
+  border: 2px solid var(--primary-clr-4);
+  z-index: 1;
+}
+.about-info .btn span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to right, #e91e63 20%, #673ab7 100%);
+  z-index: -1;
+  transition: 1s;
+}
+.about-info .btn span:hover::after {
+  width: 100%;
+  color: var(--primary-clr-1);
+}
+
+.details-row {
+  display: flex;
+}
+.row-1,
+.row-2 {
+  flex: 1 1 20rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.details-row .row-2 {
+  margin-left: 1rem;
+}
+.details-row div {
+  margin: 1rem 0;
+  font-weight: 600;
+  color: var(--primary-clr-4);
+}
+.details-row div span {
+  color: var(--white);
+  font-weight: normal;
+}
+
+@media screen and (max-width: 692px) {
+  .about-info h1 {
+    margin: 1.6rem 0;
+  }
+}

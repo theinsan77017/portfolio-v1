@@ -1,0 +1,61 @@
+.education {
+  background-color: var(--primary-clr-2);
+}
+.main-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-row .row {
+  flex: 1 1 23rem;
+  margin-top: 3.5rem;
+  padding-left: 2rem;
+  padding-top: 0;
+  border-left: 2px solid var(--primary-clr-4);
+}
+.main-row :nth-child(1) {
+  margin-right: 1.5rem;
+}
+.main-row .row h1 {
+  font-family: var(--ff-2);
+  margin-left: 1rem;
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+.main-row .row .card {
+  background-color: var(--primary-clr-1);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.card-wrapper {
+  position: relative;
+}
+.main-row .row .card-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -2.8rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background-color: var(--primary-clr-4);
+}
+.main-row .row .card:hover {
+  transform: scale(1.03);
+  box-shadow: 4px 4px 10px -1px rgba(60, 148, 221, 0.2),
+    -4px -4px 10px -1px rgba(27, 110, 162, 0.7);
+}
+.card h4 {
+  font-size: 1.3rem;
+  color: var(--primary-clr-4);
+}
+.card h2 {
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  padding: 1rem 0;
+  font-family: var(--ff-1);
+}
+.card p {
+  font-size: 1.3rem;
+}

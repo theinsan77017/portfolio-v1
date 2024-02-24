@@ -1,0 +1,108 @@
+.contact {
+  background-color: var(--primary-clr-2);
+}
+.form-control {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+form {
+  background-color: var(--primary-clr-1);
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-row-details {
+  padding: 1rem 0;
+}
+.contact-row-details input {
+  padding: 1rem;
+  background-color: transparent;
+  border: 2px solid var(--primary-clr-4);
+  outline: none;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.contact-row-details input.error {
+  border: 2px solid var(--primary-clr-5);
+}
+.error-text {
+  text-align: left;
+  font-size: 1.3rem;
+  padding-top: 3px;
+  padding-left: 5px;
+  color: var(--primary-clr-5);
+  display: none;
+}
+.contact-row-details.error .error-text {
+  display: block;
+}
+/* .error-text.error {
+  display: block;
+} */
+.contact-row-details input::placeholder {
+  font-size: 1.3rem;
+  border: none;
+}
+form textarea {
+  background-color: transparent;
+  border: 2px solid var(--primary-clr-4);
+  padding: 1rem;
+  /* margin: 1rem; */
+  margin-bottom: 0;
+  border-radius: 0.5rem;
+  display: block;
+  resize: none;
+  outline: none;
+  width: 391px;
+  height: 179px;
+}
+.text-area-field.error .error-text {
+  display: block;
+}
+form textarea.error {
+  border: 2px solid var(--primary-clr-5);
+}
+textarea::placeholder {
+  font-size: 1.3rem;
+}
+.contact-btn {
+  background-color: var(--primary-clr-4);
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-top: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: var(--primary-clr-1);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px -1px var(--primary-clr-4),
+    -3px -3px 6px -1px var(--primary-clr-4);
+  font-size: 1.3rem;
+}
+.contact-btn:hover {
+  box-shadow: none;
+}
+@media screen and (max-width: 400px) {
+  form {
+    width: 100%;
+  }
+  .contact-row-details input {
+    width: 100%;
+  }
+  .contact-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  form textarea {
+    width: 100%;
+  }
+}

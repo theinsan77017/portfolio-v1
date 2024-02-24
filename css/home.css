@@ -1,0 +1,41 @@
+.home {
+  position: relative;
+  background: url("../images/portfolio-img.png") center/cover no-repeat fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+}
+.home .modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.home .home-info {
+  max-width: 40rem;
+  margin: 0 3rem;
+}
+.info-title-animate {
+  animation: slideToBotton 2s linear forwards;
+}
+
+.home-info h1 {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+.home-info h3 {
+  margin: 2rem 0;
+  font-size: 3rem;
+}
+.home-info p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.home-info-p-animate {
+  animation: slideToTop 2s linear forwards;
+}

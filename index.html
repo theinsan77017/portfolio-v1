@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- font awsome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/education.css" />
+    <link rel="stylesheet" href="./css/skills.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <!-- custom js file link  -->
+    <script src="./js/script.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  </head>
+  <body>
+    <div class="nav-toggle"><i id="bars" class="fa-solid fa-bars"></i></div>
+    <!-- header section start  -->
+    <header class="header">
+      <div class="header-content">
+        <div class="name">Thein San</div>
+        <div class="image">
+          <img src="./images/portfolio-img.png" alt="" />
+        </div>
+      </div>
+      <div class="follow">
+        <a href="https://www.facebook.com/theinsan77017" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://msng.link/o?09680920017=vi" target="_blank"
+          ><i class="fa-brands fa-viber"></i
+        ></a>
+        <a href="https://msng.link/o?theinsan77017=tg" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://t.me/theinsan_77017" target="_blank"
+          ><i class="fa-brands fa-telegram"></i
+        ></a>
+      </div>
+      <nav class="nav">
+        <div class="nav-links">
+          <a href="#home" data-target="home" class="link scroll-link active"
+            ><i class="fa-solid fa-house"></i>home</a
+          >
+          <a href="#about" data-target="about" class="link scroll-link"
+            ><i class="fa-solid fa-id-badge"></i>about</a
+          >
+          <a href="#education" data-target="education" class="link scroll-link"
+            ><i class="fa-solid fa-school"></i>education</a
+          >
+          <a href="#skills" data-target="skills" class="link scroll-link"
+            ><i class="fa-brands fa-stripe-s"></i>skills</a
+          >
+          <a href="#projects" data-target="projects" class="link scroll-link"
+            ><i class="fa-brands fa-product-hunt"></i>projects</a
+          >
+          <a href="#services" data-target="services" class="link scroll-link"
+            ><i class="fa-solid fa-briefcase"></i>services</a
+          >
+          <a href="#contact" data-target="contact" class="link scroll-link"
+            ><i class="fa-solid fa-envelope"></i>contact</a
+          >
+        </div>
+      </nav>
+    </header>
+    <!-- header section end  -->
+    <section class="home" id="home">
+      <span class="modal"></span>
+      <article class="home-info">
+        <div class="info-title hidden-animate">
+          <h1>Hi! my name is thein san and</h1>
+          <h3>I'm <span>web designer</span></h3>
+        </div>
+        <p class="hidden-animate home-info-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          illum, amet odio possimus nam enim. Voluptas voluptatum debitis quia
+          ex assumenda hic, iste facere exercitationem id quis perferendis illum
+          alias.
+        </p>
+      </article>
+    </section>
+    <section class="about" id="about">
+      <div class="section-title">about <span>me</span></div>
+      <div class="row">
+        <article class="about-img hidden-animate">
+          <img src="./images/portfolio-img.png" alt="" />
+        </article>
+        <article class="about-info hidden-animate">
+          <h1>my name is thein san and i am web develober</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+            quidem similique neque aut consequuntur praesentium. Ipsa reiciendis
+            minus numquam, modi tempora accusamus laudantium omnis? Harum
+            aperiam libero assumenda fugiat nihil!
+          </p>
+          <div class="details-row">
+            <div class="row-1">
+              <div>age: <span>21</span></div>
+              <div>grander: <span>male</span></div>
+              <div>language: <span>myanmar</span></div>
+              <div>work: <span>front-end developer</span></div>
+            </div>
+            <div class="row-2">
+              <div>freelance: <span>avaliable</span></div>
+              <div>phone: <span>09680920017</span></div>
+              <div>email: <span>bgyi8249@gmail.com</span></div>
+              <div>country: <span>myanmar</span></div>
+            </div>
+          </div>
+          <div class="btn">
+            <a href=""><span>download my cv</span></a>
+          </div>
+          <div class="btn">
+            <a href="#contact"><span>hire me</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="education" id="education">
+      <div class="section-title">my <span>jonery</span></div>
+      <div class="main-row">
+        <!-- education section start  -->
+        <article class="row">
+          <h1>education</h1>
+          <!-- single card start  -->
+          <div class="card-wrapper">
+            <div class="card">
+              <h4>2022 - 2023</h4>
+              <h2>high school degree</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui
+                animi, deleniti minima nulla repellat est nobis aliquid
+                molestiae quidem ullam perspiciatis nemo mollitia quam adipisci.
+                Delectus enim quaerat numquam?
+              </p>
+            </div>
+          </div>
+          <!-- single card start  -->
+
+          <!-- single card start  -->
+          <div class="card-wrapper">
+            <div class="card">
+              <h4>2022 - 2023</h4>
+              <h2>high school degree</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui
+                animi, deleniti minima nulla repellat est nobis aliquid
+                molestiae quidem ullam perspiciatis nemo mollitia quam adipisci.
+                Delectus enim quaerat numquam?
+              </p>
+            </div>
+          </div>
+          <!-- single card start  -->
+
+          <!-- single card start  -->
+          <div class="card-wrapper">
+            <div class="card">
+              <h4>2022 - 2023</h4>
+              <h2>high school degree</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui
+                animi, deleniti minima nulla repellat est nobis aliquid
+                molestiae quidem ullam perspiciatis nemo mollitia quam adipisci.
+                Delectus enim quaerat numquam?
+              </p>
+            </div>
+          </div>
+          <!-- single card start  -->
+        </article>
+        <!-- education section start  -->
+
+        <!-- experience section start -->
+        <article class="row">
+          <h1>experience</h1>
+
+          <!-- single card start  -->
+          <div class="card-wrapper">
+            <div class="card">
+              <h4>2022 - 2023</h4>
+              <h2>high school degree</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui
+                animi, deleniti minima nulla repellat est nobis aliquid
+                molestiae quidem ullam perspiciatis nemo mollitia quam adipisci.
+                Delectus enim quaerat numquam?
+              </p>
+            </div>
+          </div>
+          <!-- single card start  -->
+
+          <!-- single card start  -->
+          <div class="card-wrapper">
+            <div class="card">
+              <h4>2022 - 2023</h4>
+              <h2>high school degree</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui
+                animi, deleniti minima nulla repellat est nobis aliquid
+                molestiae quidem ullam perspiciatis nemo mollitia quam adipisci.
+                Delectus enim quaerat numquam?
+              </p>
+            </div>
+          </div>
+          <!-- single card start  -->
+
+          <!-- single card start  -->
+          <div class="card-wrapper">
+            <div class="card">
+              <h4>2022 - 2023</h4>
+              <h2>high school degree</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab qui
+                animi, deleniti minima nulla repellat est nobis aliquid
+                molestiae quidem ullam perspiciatis nemo mollitia quam adipisci.
+                Delectus enim quaerat numquam?
+              </p>
+            </div>
+          </div>
+          <!-- single card start  -->
+        </article>
+        <!-- experience section end -->
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="section-title skills-title">my <span>skills</span></div>
+      <div class="skills-section">
+        <article class="skills-bars">
+          <!-- single bar  start-->
+          <div class="title-skills">
+            <h2>web design</h2>
+            <p>70%</p>
+          </div>
+          <div class="bars bar-1">
+            <span class="skill-bar-1 hidden-animate"></span>
+          </div>
+          <!--end of single bar -->
+
+          <!-- single bar  start-->
+          <div class="title-skills">
+            <h2>ux/ui design</h2>
+            <p>50%</p>
+          </div>
+          <div class="bars bar-2">
+            <span class="skill-bar-2 hidden-animate"></span>
+          </div>
+          <!--end of single bar -->
+
+          <!-- single bar  start-->
+          <div class="title-skills">
+            <h2>sale & marketing</h2>
+            <p>85%</p>
+          </div>
+          <div class="bars bar-3">
+            <span class="skill-bar-3 hidden-animate"></span>
+          </div>
+          <!--end of single bar -->
+
+          <!-- single bar  start-->
+          <div class="title-skills">
+            <h2>web developer</h2>
+            <p>75%</p>
+          </div>
+          <div class="bars bar-4">
+            <span class="skill-bar-4 hidden-animate"></span>
+          </div>
+          <!--end of single bar -->
+        </article>
+
+        <article class="skills-info">
+          <div class="rows">
+            <div class="skills-row">
+              <div class="wrapper">
+                <div class="outer">
+                  <div class="inner">
+                    <div class="content">80% <span>communication</span></div>
+                  </div>
+                </div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                width="160px"
+                height="160px"
+              >
+                <defs>
+                  <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#8ef" />
+                    <stop offset="100%" stop-color="#8ef" />
+                  </linearGradient>
+                </defs>
+                <circle
+                  class="skill-1 hidden-animate"
+                  cx="80"
+                  cy="80"
+                  r="57"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+
+            <div class="skills-row">
+              <div class="wrapper">
+                <div class="outer">
+                  <div class="inner">
+                    <div class="content">70% <span>management</span></div>
+                  </div>
+                </div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                width="160px"
+                height="160px"
+              >
+                <defs>
+                  <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63" />
+                    <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+                </defs>
+                <circle
+                  class="skill-2 hidden-animate"
+                  cx="80"
+                  cy="80"
+                  r="57"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="rows">
+            <div class="skills-row">
+              <div class="wrapper">
+                <div class="outer">
+                  <div class="inner">
+                    <div class="content">40% <span>english speaking</span></div>
+                  </div>
+                </div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                width="160px"
+                height="160px"
+              >
+                <defs>
+                  <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63" />
+                    <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+                </defs>
+                <circle
+                  class="skill-3 hidden-animate"
+                  cx="80"
+                  cy="80"
+                  r="57"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+
+            <div class="skills-row">
+              <div class="wrapper">
+                <div class="outer">
+                  <div class="inner">
+                    <div class="content">85% <span>leadership</span></div>
+                  </div>
+                </div>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                width="160px"
+                height="160px"
+              >
+                <defs>
+                  <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63" />
+                    <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+                </defs>
+                <circle
+                  class="skill-4 hidden-animate"
+                  cx="80"
+                  cy="80"
+                  r="57"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="section-title">my <span>job</span></div>
+      <div class="section-title projects-title">recently projects</div>
+      <div class="project-item">
+        <!-- single item start -->
+        <article class="item">
+          <img src="./images/project-img-1.jpg" alt="Project Image" />
+          <div class="project-info">
+            <p>web</p>
+            <h2>web design</h2>
+            <a href="#">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </article>
+        <!-- single item end -->
+
+        <!-- single item start -->
+        <article class="item">
+          <img src="./images/project-img-1.jpg" alt="Project Image" />
+          <div class="project-info">
+            <p>web</p>
+            <h2>web design</h2>
+            <a href="#">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </article>
+        <!-- single item end -->
+
+        <!-- single item start -->
+        <article class="item">
+          <img src="./images/project-img-1.jpg" alt="Project Image" />
+          <div class="project-info">
+            <p>web</p>
+            <h2>web design</h2>
+            <a href="#">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </article>
+        <!-- single item end -->
+
+        <!-- single item start -->
+        <article class="item">
+          <img src="./images/project-img-1.jpg" alt="Project Image" />
+          <div class="project-info">
+            <p>web</p>
+            <h2>web design</h2>
+            <a href="#">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </article>
+        <!-- single item end -->
+
+        <!-- single item start -->
+        <article class="item">
+          <img src="./images/project-img-1.jpg" alt="Project Image" />
+          <div class="project-info">
+            <p>web</p>
+            <h2>web design</h2>
+            <a href="#">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </article>
+        <!-- single item end -->
+
+        <!-- single item start -->
+        <article class="item">
+          <img src="./images/project-img-1.jpg" alt="Project Image" />
+          <div class="project-info">
+            <p>web</p>
+            <h2>web design</h2>
+            <a href="#">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </article>
+        <!-- single item end -->
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="section-title">our <span>services</span></div>
+      <div class="main-services-row">
+        <!-- single service card stard  -->
+        <div class="service-card">
+          <i class="fa-solid fa-palette"></i>
+          <h2>web design</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            veniam odit recusandae, quia inventore architecto accusantium
+            consequuntur tempore excepturi expedita sit ullam delectus corporis
+            sint, repellat cum doloremque eum nesciunt.
+          </p>
+        </div>
+        <!-- single service card end  -->
+
+        <!-- single service card stard  -->
+        <div class="service-card">
+          <i class="fa-solid fa-palette"></i>
+          <h2>web design</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            veniam odit recusandae, quia inventore architecto accusantium
+            consequuntur tempore excepturi expedita sit ullam delectus corporis
+            sint, repellat cum doloremque eum nesciunt.
+          </p>
+        </div>
+        <!-- single service card end  -->
+
+        <!-- single service card stard  -->
+        <div class="service-card">
+          <i class="fa-solid fa-palette"></i>
+          <h2>web design</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            veniam odit recusandae, quia inventore architecto accusantium
+            consequuntur tempore excepturi expedita sit ullam delectus corporis
+            sint, repellat cum doloremque eum nesciunt.
+          </p>
+        </div>
+        <!-- single service card end  -->
+
+        <!-- single service card stard  -->
+        <div class="service-card">
+          <i class="fa-solid fa-palette"></i>
+          <h2>web design</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            veniam odit recusandae, quia inventore architecto accusantium
+            consequuntur tempore excepturi expedita sit ullam delectus corporis
+            sint, repellat cum doloremque eum nesciunt.
+          </p>
+        </div>
+        <!-- single service card end  -->
+
+        <!-- single service card stard  -->
+        <div class="service-card">
+          <i class="fa-solid fa-palette"></i>
+          <h2>web design</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            veniam odit recusandae, quia inventore architecto accusantium
+            consequuntur tempore excepturi expedita sit ullam delectus corporis
+            sint, repellat cum doloremque eum nesciunt.
+          </p>
+        </div>
+        <!-- single service card end  -->
+
+        <!-- single service card stard  -->
+        <div class="service-card">
+          <i class="fa-solid fa-palette"></i>
+          <h2>web design</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            veniam odit recusandae, quia inventore architecto accusantium
+            consequuntur tempore excepturi expedita sit ullam delectus corporis
+            sint, repellat cum doloremque eum nesciunt.
+          </p>
+        </div>
+        <!-- single service card end  -->
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="section-title">contact <span>me !</span></div>
+      <div class="form-control">
+        <form action="#">
+          <div class="contact-row">
+            <div class="contact-row-details">
+              <input
+                type="text"
+                class="item"
+                autocomplete="off"
+                id="name"
+                name="Full Name"
+                placeholder="Your Name"
+              />
+              <div class="error-text">Name field can't be blank!</div>
+            </div>
+            <div class="contact-row-details">
+              <input
+                name="Phone"
+                type="number"
+                autocomplete="off"
+                class="item"
+                id="phone"
+                placeholder="Your Phone Number"
+              />
+              <div class="error-text">Number field can't be blank!</div>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-row-details">
+              <input
+                type="email"
+                name="Email"
+                autocomplete="off"
+                class="item"
+                id="email"
+                placeholder="Your Email"
+              />
+              <div class="error-text email">Email field can't be blank!</div>
+            </div>
+            <div class="contact-row-details">
+              <input
+                type="text"
+                name="Subject"
+                autocomplete="off"
+                class="item"
+                id="subject"
+                placeholder="Your Subject"
+              />
+              <div class="error-text">Subject field can't be blank!</div>
+            </div>
+          </div>
+
+          <div class="text-area-field">
+            <textarea
+              name="message"
+              autocomplete="off"
+              placeholder="Your Message"
+              id="message"
+              cols="30"
+              rows="10"
+              class="item"
+            ></textarea>
+            <div class="error-text">Textarea field can't be blank!</div>
+          </div>
+
+          <button class="contact-btn" type="submit">send message</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
