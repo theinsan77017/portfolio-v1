@@ -22,16 +22,30 @@
 .info-title-animate {
   animation: slideToBotton 2s linear forwards;
 }
+.info-title h3 span {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  background: linear-gradient(
+    to right,
+    var(--primary-clr-4),
+    var(--primary-clr-5)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
 .home-info h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-transform: capitalize;
+  color: var(--primary-clr-4);
 }
 .home-info h3 {
   margin: 2rem 0;
   font-size: 3rem;
+  color: var(--primary-clr-5);
 }
 .home-info p {
+  color: var(--primary-clr-4);
   line-height: 1.5;
   font-size: 1.2rem;
   letter-spacing: 1px;

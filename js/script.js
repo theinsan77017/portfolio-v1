@@ -193,3 +193,12 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(section);
   });
 });
+
+// home typing text animate
+var typed = new Typed(".multi-text", {
+  strings: ["coder", "youtuber", "designer"],
+  loop: true,
+  typeSpeed: 100,
+  backSpeed: 80,
+  backDelay: 1500,
+});
